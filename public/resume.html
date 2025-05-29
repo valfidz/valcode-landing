@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naufal Hafizh Nugraha - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .header .title {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .item-company {
+            color: #666;
+            font-style: italic;
+        }
+
+        .item-date {
+            color: #666;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+
+        .item-description {
+            margin-top: 8px;
+        }
+
+        .item-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .item-description li {
+            margin-bottom: 3px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .skill-list {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .tech-tag {
+            background-color: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                font-size: 12px;
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                margin-bottom: 25px;
+            }
+
+            .contact-info {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Naufal Hafizh Nugraha</h1>
+        <div class="title">Backend Developer & Game Developer</div>
+        <div class="contact-info">
+            <span>📧 naufal.hafizh@example.com</span>
+            <span>🔗 linkedin.com/in/naufal-hafizh</span>
+            <span>🐙 github.com/naufal-hafizh</span>
+            <span>🌐 naufalportfolio.netlify.app</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>
+            Passionate Backend Developer with expertise in building scalable, efficient systems and robust APIs.
+            Strong foundation in database architecture design and complex business logic implementation.
+            Additionally experienced in game development, bringing creative ideas to life through code with a
+            dual passion that enables approaching problems from both technical and creative perspectives.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-list">
+                    Node.js, Python, Go, Java<br>
+                    PostgreSQL, MongoDB, Redis<br>
+                    Docker, Kubernetes, AWS<br>
+                    REST APIs, GraphQL, gRPC
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Game Development</h3>
+                <div class="skill-list">
+                    Unity, C#, Game Design<br>
+                    2D/3D Graphics, Physics Systems<br>
+                    Game Mechanics, Level Design<br>
+                    Performance Optimization
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-list">
+                    Git, Linux, CI/CD<br>
+                    Microservices Architecture<br>
+                    Message Queues, Testing<br>
+                    Agile Development
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skill-list">
+                    Problem Solving<br>
+                    Team Collaboration<br>
+                    Code Review<br>
+                    Technical Writing
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Featured Projects</h2>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">E-Commerce API Platform</div>
+                    <div class="item-company">Scalable REST API for e-commerce platform</div>
+                </div>
+                <div class="item-date">2024</div>
+            </div>
+            <div class="item-description">
+                <p>Built a comprehensive API handling user authentication, product management, order processing, and payment integration with high performance and security.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Redis</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Indie Puzzle Game</div>
+                    <div class="item-company">2D puzzle game with unique mechanics</div>
+                </div>
+                <div class="item-date">2024</div>
+            </div>
+            <div class="item-description">
+                <p>Developed a complete puzzle game featuring custom mechanics, level progression, and polished user experience from concept to release.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Game Design</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Microservices Architecture</div>
+                    <div class="item-company">Distributed system for high-traffic applications</div>
+                </div>
+                <div class="item-date">2023</div>
+            </div>
+            <div class="item-description">
+                <p>Designed and implemented a microservices architecture handling millions of requests with fault tolerance and horizontal scaling capabilities.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">gRPC</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Backend Developer</div>
+                    <div class="item-company">Current Position</div>
+                </div>
+                <div class="item-date">2023 - Present</div>
+            </div>
+            <div class="item-description">
+                <ul>
+                    <li>Design and implement scalable backend systems using modern technologies</li>
+                    <li>Develop robust APIs serving millions of requests with high availability</li>
+                    <li>Collaborate with cross-functional teams to deliver high-quality software solutions</li>
+                    <li>Optimize database performance and implement efficient caching strategies</li>
+                    <li>Mentor junior developers and conduct code reviews</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Game Developer</div>
+                    <div class="item-company">Personal Projects & Freelance</div>
+                </div>
+                <div class="item-date">2022 - Present</div>
+            </div>
+            <div class="item-description">
+                <ul>
+                    <li>Develop indie games using Unity and C# with focus on engaging gameplay mechanics</li>
+                    <li>Design and implement game systems including physics, AI, and user interfaces</li>
+                    <li>Create prototypes and iterate based on player feedback and testing</li>
+                    <li>Collaborate with artists and designers to bring creative visions to life</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Bachelor's Degree in Computer Science</div>
+                    <div class="item-company">University Name</div>
+                </div>
+                <div class="item-date">2020 - 2024</div>
+            </div>
+            <div class="item-description">
+                <p>Focused on software engineering, algorithms, and system design. Relevant coursework included database systems, software architecture, and computer graphics.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Interests & Activities</h2>
+        <p>
+            <strong>Technical Writing:</strong> Author technical blog posts on backend development and game development topics<br>
+            <strong>Open Source:</strong> Contributor to open-source projects and active in developer communities<br>
+            <strong>Continuous Learning:</strong> Always exploring new technologies and development methodologies<br>
+            <strong>Gaming:</strong> Avid gamer with deep appreciation for game design and mechanics
+        </p>
+    </div>
+</body>
+</html>
