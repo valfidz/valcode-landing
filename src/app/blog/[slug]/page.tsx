@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { TableOfContents } from "@/components/TableOfContents";
 import { BlogContent } from "@/components/BlogContent";
@@ -973,9 +974,9 @@ The journey from monolith to microservices should be evolutionary, not revolutio
 };
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -984,8 +985,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({ params }: BlogPostPageProps) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts];
+export default async function BlogPost({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
     notFound();
@@ -997,7 +999,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <Image src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
             <Link href="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
               VALCODE
             </Link>

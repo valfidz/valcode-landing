@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin, Mail, ExternalLink, Code, Database, Gamepad2 } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Code, Database } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { ResumeSection } from "@/components/ResumeSection";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <Image src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
             <h1 className="text-xl font-bold text-gray-900">VALCODE</h1>
           </div>
           <div className="flex space-x-6">
@@ -34,7 +35,7 @@ export default function Home() {
             Naufal Hafizh Nugraha
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Backend Developer & Game Development Enthusiast
+            {`Backend Developer & Game Development Enthusiast`}
           </p>
           <div className="flex justify-center space-x-4">
             <Button size="lg" className="bg-gray-900 hover:bg-gray-800" asChild>
@@ -60,18 +61,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-justify">
               <p className="text-gray-600 mb-4">
-                I'm a passionate backend developer with a strong foundation in building scalable,
+                {`I'm a passionate backend developer with a strong foundation in building scalable,
                 efficient systems. My expertise lies in creating robust APIs, designing database
-                architectures, and implementing complex business logic.
+                architectures, and implementing complex business logic.`}
               </p>
               <p className="text-gray-600 mb-4">
-                Beyond backend development, I have a deep interest in game development, where I
+                {`Beyond backend development, I have a deep interest in game development, where I
                 enjoy bringing creative ideas to life through code. This dual passion allows me
-                to approach problems from both technical and creative perspectives.
+                to approach problems from both technical and creative perspectives.`}
               </p>
               <p className="text-gray-600">
-                I'm always eager to learn new technologies and take on challenging projects that
-                push the boundaries of what's possible.
+                {`I'm always eager to learn new technologies and take on challenging projects that
+                push the boundaries of what's possible.`}
               </p>
             </div>
             <div className="flex justify-center">
@@ -79,7 +80,7 @@ export default function Home() {
                 <Code className="h-20 w-20 text-gray-400" />
               </div> */}
               <div>
-                <img src="/photo_cropped.png" alt="photo" />
+                <Image src="/photo_cropped.png" alt="photo" />
               </div>
             </div>
           </div>
@@ -112,7 +113,7 @@ export default function Home() {
                       <Badge variant="secondary">React.js</Badge>
                     </div>
                     <p className="text-sm text-gray-600">
-                      Built a comprehensive API and UI handling user authentication and post management with high performance and security.
+                      {`Built a comprehensive API and UI handling user authentication and post management with high performance and security.`}
                     </p>
                   </CardContent>
                 </Card>
@@ -237,8 +238,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  Learn best practices for designing and implementing scalable REST APIs using Node.js,
-                  Express, and PostgreSQL. We'll cover database design, caching strategies, and performance optimization.
+                  {`Learn best practices for designing and implementing scalable REST APIs using Node.js,
+                  Express, and PostgreSQL. We'll cover database design, caching strategies, and performance optimization.`}
                 </p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/blog/scalable-apis-nodejs-postgresql">
@@ -256,8 +257,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  A complete guide to taking your game idea from concept to working prototype.
-                  Covering ideation, planning, development workflow, and testing strategies.
+                  {`A complete guide to taking your game idea from concept to working prototype.
+                  Covering ideation, planning, development workflow, and testing strategies.`}
                 </p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/blog/game-development-idea-to-prototype">
@@ -295,14 +296,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Get In Touch</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto text-center">
-            I'm always interested in discussing new opportunities, collaborating on projects,
-            or simply talking about technology and game development.
+            {`I'm always interested in discussing new opportunities, collaborating on projects,
+            or simply talking about technology and game development.`}
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Contact Methods */}
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Let's Connect</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{`Let's Connect`}</h3>
               <div className="space-y-3">
                 <Button size="lg" className="bg-gray-900 hover:bg-gray-800 w-full" asChild>
                   <a href="mailto:nugrahanaufalhafizh@gmail.com">
