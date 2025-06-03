@@ -23,15 +23,15 @@ const blogPosts = [
     tags: ["Game Development", "Unity", "Prototyping", "Design"],
     slug: "game-development-idea-to-prototype"
   },
-  {
-    id: "microservices-architecture-lessons",
-    title: "Microservices Architecture: Lessons Learned",
-    description: "Real-world experiences and lessons learned from implementing microservices architecture. What worked, what didn't, and key takeaways for your next project.",
-    date: "February 28, 2024",
-    readTime: "10 min read",
-    tags: ["Microservices", "Architecture", "Backend", "DevOps"],
-    slug: "microservices-architecture-lessons"
-  }
+  // {
+  //   id: "microservices-architecture-lessons",
+  //   title: "Microservices Architecture: Lessons Learned",
+  //   description: "Real-world experiences and lessons learned from implementing microservices architecture. What worked, what didn't, and key takeaways for your next project.",
+  //   date: "February 28, 2024",
+  //   readTime: "10 min read",
+  //   tags: ["Microservices", "Architecture", "Backend", "DevOps"],
+  //   slug: "microservices-architecture-lessons"
+  // }
 ];
 
 export default function BlogPage() {
@@ -40,9 +40,12 @@ export default function BlogPage() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
-            Naufal Hafizh
-          </Link>
+          <div className="flex items-center">
+            <img src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <Link href="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
+              VALCODE
+            </Link>
+          </div>
           <div className="flex space-x-6">
             <Link href="/#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</Link>
             <Link href="/#projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</Link>

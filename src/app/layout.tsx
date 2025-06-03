@@ -6,7 +6,7 @@ import { ClientBody } from "./ClientBody";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Naufal Hafizh Nugraha - Backend Developer & Game Developer",
+  title: "VALCODE",
   description:
     "Backend Developer passionate about building robust systems and creating engaging game experiences. Specialized in Node.js, PostgreSQL, Unity, and scalable architecture design.",
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://naufalportfolio.netlify.app",
+    url: "https://valcode.vercel.app",
     title: "Naufal Hafizh Nugraha - Backend Developer & Game Developer",
     description:
       "Backend Developer passionate about building robust systems and creating engaging game experiences.",

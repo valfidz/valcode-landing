@@ -88,7 +88,7 @@ export function ResumeSection() {
       </div>
 
       <div className="mt-4 text-sm text-gray-500">
-        Last updated: December 2024 • Available in HTML format
+        Last updated: June 2025 • Available in HTML format
       </div>
     </div>
   );

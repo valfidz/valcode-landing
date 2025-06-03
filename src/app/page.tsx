@@ -12,7 +12,10 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-gray-900">Naufal Hafizh</h1>
+          <div className="flex items-center">
+            <img src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <h1 className="text-xl font-bold text-gray-900">VALCODE</h1>
+          </div>
           <div className="flex space-x-6">
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
             <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
@@ -31,7 +34,7 @@ export default function Home() {
             Naufal Hafizh Nugraha
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Backend Developer passionate about building robust systems and creating engaging game experiences
+            Backend Developer & Game Development Enthusiast
           </p>
           <div className="flex justify-center space-x-4">
             <Button size="lg" className="bg-gray-900 hover:bg-gray-800" asChild>
@@ -55,7 +58,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="text-justify">
               <p className="text-gray-600 mb-4">
                 I'm a passionate backend developer with a strong foundation in building scalable,
                 efficient systems. My expertise lies in creating robust APIs, designing database
@@ -72,8 +75,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center">
+              {/* <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center">
                 <Code className="h-20 w-20 text-gray-400" />
+              </div> */}
+              <div>
+                <img src="/photo_cropped.png" alt="photo" />
               </div>
             </div>
           </div>
@@ -84,84 +90,88 @@ export default function Home() {
       <section id="projects" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Project Card 1 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <Database className="h-8 w-8 text-gray-600" />
-                  <ExternalLink className="h-4 w-4 text-gray-400" />
-                </div>
-                <CardTitle>E-Commerce API</CardTitle>
-                <CardDescription>
-                  Scalable REST API for e-commerce platform with advanced features
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Node.js</Badge>
-                  <Badge variant="secondary">PostgreSQL</Badge>
-                  <Badge variant="secondary">Docker</Badge>
-                  <Badge variant="secondary">Redis</Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Built a comprehensive API handling user authentication, product management,
-                  order processing, and payment integration with high performance and security.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="flex flex-wrap justify-center gap-6">
+              {/* Project Card 1 */}
+              <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+                <Card className="hover:shadow-lg transition-shadow h-full">
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <Database className="h-8 w-8 text-gray-600" />
+                      <ExternalLink className="h-4 w-4 text-gray-400" />
+                    </div>
+                    <CardTitle>Pipopa Company Profile</CardTitle>
+                    <CardDescription>
+                      Scalable REST API and responsive UI for company profile
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary">Node.js</Badge>
+                      <Badge variant="secondary">Express.js</Badge>
+                      <Badge variant="secondary">PostgreSQL</Badge>
+                      <Badge variant="secondary">React.js</Badge>
+                    </div>
+                    <p className="text-sm text-gray-600">
+                      Built a comprehensive API and UI handling user authentication and post management with high performance and security.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
 
-            {/* Project Card 2 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <Gamepad2 className="h-8 w-8 text-gray-600" />
-                  <ExternalLink className="h-4 w-4 text-gray-400" />
-                </div>
-                <CardTitle>Indie Puzzle Game</CardTitle>
-                <CardDescription>
-                  2D puzzle game with unique mechanics and engaging gameplay
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Unity</Badge>
-                  <Badge variant="secondary">C#</Badge>
-                  <Badge variant="secondary">Game Design</Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Developed a complete puzzle game featuring custom mechanics, level progression,
-                  and polished user experience from concept to release.
-                </p>
-              </CardContent>
-            </Card>
+              {/* Project Card 2 */}
+              {/* <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+                <Card className="hover:shadow-lg transition-shadow h-full">
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <Gamepad2 className="h-8 w-8 text-gray-600" />
+                      <ExternalLink className="h-4 w-4 text-gray-400" />
+                    </div>
+                    <CardTitle>Indie Puzzle Game</CardTitle>
+                    <CardDescription>
+                      2D puzzle game with unique mechanics and engaging gameplay
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary">Unity</Badge>
+                      <Badge variant="secondary">C#</Badge>
+                      <Badge variant="secondary">Game Design</Badge>
+                    </div>
+                    <p className="text-sm text-gray-600">
+                      Developed a complete puzzle game featuring custom mechanics, level progression,
+                      and polished user experience from concept to release.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div> */}
 
-            {/* Project Card 3 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <Code className="h-8 w-8 text-gray-600" />
-                  <ExternalLink className="h-4 w-4 text-gray-400" />
-                </div>
-                <CardTitle>Microservices Architecture</CardTitle>
-                <CardDescription>
-                  Distributed system design for high-traffic applications
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Go</Badge>
-                  <Badge variant="secondary">Kubernetes</Badge>
-                  <Badge variant="secondary">gRPC</Badge>
-                  <Badge variant="secondary">MongoDB</Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Designed and implemented a microservices architecture handling millions of
-                  requests with fault tolerance and horizontal scaling capabilities.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+              {/* Project Card 3 */}
+              <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm">
+                <Card className="hover:shadow-lg transition-shadow h-full">
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <Code className="h-8 w-8 text-gray-600" />
+                      <ExternalLink className="h-4 w-4 text-gray-400" />
+                    </div>
+                    <CardTitle>E-Meterai</CardTitle>
+                    <CardDescription>
+                      Distributed system design for high-traffic applications
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary">Node.js</Badge>
+                      <Badge variant="secondary">PostgreSQL</Badge>
+                      <Badge variant="secondary">Docker</Badge>
+                      <Badge variant="secondary">Redis</Badge>
+                    </div>
+                    <p className="text-sm text-gray-600">
+                      Maintained a microservices architecture handling millions of requests with fault tolerance and horizontal scaling capabilities.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
         </div>
       </section>
 
@@ -174,15 +184,12 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Backend Development</h3>
               <div className="flex flex-wrap gap-2 mb-6">
                 <Badge>Node.js</Badge>
-                <Badge>Python</Badge>
-                <Badge>Go</Badge>
-                <Badge>Java</Badge>
                 <Badge>PostgreSQL</Badge>
                 <Badge>MongoDB</Badge>
                 <Badge>Redis</Badge>
                 <Badge>Docker</Badge>
-                <Badge>Kubernetes</Badge>
-                <Badge>AWS</Badge>
+                <Badge>Supabase</Badge>
+                <Badge>Google Cloud Platform</Badge>
               </div>
 
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Game Development</h3>
@@ -203,8 +210,6 @@ export default function Home() {
                 <Badge>CI/CD</Badge>
                 <Badge>Microservices</Badge>
                 <Badge>REST APIs</Badge>
-                <Badge>GraphQL</Badge>
-                <Badge>Message Queues</Badge>
                 <Badge>Testing</Badge>
               </div>
 
@@ -214,7 +219,6 @@ export default function Home() {
                 <Badge>Team Collaboration</Badge>
                 <Badge>Code Review</Badge>
                 <Badge>Agile Development</Badge>
-                <Badge>Technical Writing</Badge>
               </div>
             </div>
           </div>
@@ -229,7 +233,7 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>Building Scalable APIs with Node.js and PostgreSQL</CardTitle>
-                <CardDescription>March 15, 2024 • 8 min read</CardDescription>
+                <CardDescription>March 15, 2025 • 8 min read</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -248,7 +252,7 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>Game Development: From Idea to Prototype</CardTitle>
-                <CardDescription>March 8, 2024 • 6 min read</CardDescription>
+                <CardDescription>March 8, 2025 • 6 min read</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -264,10 +268,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            {/* <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>Microservices Architecture: Lessons Learned</CardTitle>
-                <CardDescription>February 28, 2024 • 10 min read</CardDescription>
+                <CardDescription>February 28, 2025 • 10 min read</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -281,7 +285,7 @@ export default function Home() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -301,19 +305,19 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Let's Connect</h3>
               <div className="space-y-3">
                 <Button size="lg" className="bg-gray-900 hover:bg-gray-800 w-full" asChild>
-                  <a href="mailto:naufal.hafizh@example.com">
+                  <a href="mailto:nugrahanaufalhafizh@gmail.com">
                     <Mail className="mr-2 h-4 w-4" />
                     Email Me
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="w-full" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/valfidz" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="w-full" asChild>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/nhafizh" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2 h-4 w-4" />
                     LinkedIn
                   </a>
@@ -330,7 +334,7 @@ export default function Home() {
           <Separator className="my-8" />
 
           <p className="text-gray-500 text-center">
-            naufal.hafizh@example.com • Available for freelance and full-time opportunities
+            nugrahanaufalhafizh@gmail.com • Available for freelance and full-time opportunities
           </p>
         </div>
       </section>
@@ -338,7 +342,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-gray-200">
         <div className="max-w-6xl mx-auto text-center text-gray-500">
-          <p>&copy; 2024 Naufal Hafizh Nugraha. All rights reserved.</p>
+          <p>&copy; 2025 Naufal Hafizh Nugraha. All rights reserved.</p>
         </div>
       </footer>
     </div>
