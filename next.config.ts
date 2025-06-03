@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // devIndicators: false
+  devIndicators: false
 };
 
 export default nextConfig;
