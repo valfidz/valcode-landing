@@ -80,7 +80,7 @@ export default function Home() {
                 <Code className="h-20 w-20 text-gray-400" />
               </div> */}
               <div>
-                <Image src="/photo_cropped.png" width={256} height={256} alt="photo" />
+                <Image src="/profile_1.png" width={256} height={256} alt="photo" />
               </div>
             </div>
           </div>
