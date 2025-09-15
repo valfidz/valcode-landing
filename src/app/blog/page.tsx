@@ -42,7 +42,7 @@ export default function BlogPage() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <Image src="/logo.png" alt="VALCODE Logo" width={32} height={32} className="h-8 w-auto mr-2" />
             <Link href="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
               VALCODE
             </Link>

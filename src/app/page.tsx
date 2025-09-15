@@ -14,7 +14,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/logo.png" alt="VALCODE Logo" className="h-8 w-auto mr-2" />
+            <Image src="/logo.png" alt="VALCODE Logo" width={32} height={32} className="h-8 w-auto mr-2" />
             <h1 className="text-xl font-bold text-gray-900">VALCODE</h1>
           </div>
           <div className="flex space-x-6">
@@ -80,7 +80,7 @@ export default function Home() {
                 <Code className="h-20 w-20 text-gray-400" />
               </div> */}
               <div>
-                <Image src="/photo_cropped.png" alt="photo" />
+                <Image src="/photo_cropped.png" width={256} height={256} alt="photo" />
               </div>
             </div>
           </div>
